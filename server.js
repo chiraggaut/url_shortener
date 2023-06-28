@@ -146,7 +146,9 @@ app.post('/shortUrls', async (req, res) => {
 });
 
 app.get('/:shortUrl', async (req, res) => {
-  const shorturl = await collection.findOne({ short: req.params.shortUrl });
+  const siteUrl = req.protocol + '://' + req.get('host');
+  const shortenedUrl = siteUrl + '/' + req.params.shortUrl;
+  const shorturl = await collection.findOne({ short: shortenedUrl });
   if (!shorturl) {
     return res.sendStatus(404);
   }
