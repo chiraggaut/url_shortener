@@ -1,6 +1,7 @@
 # URL SHORTENER
 
-[live Site](https://shorturl-chirag.onrender.com/)
+[Link](https://shorturl-chirag.onrender.com/)  
+[Alternate link](https://url-chirag.up.railway.app/) 
 
 ## Table of Contents
 
